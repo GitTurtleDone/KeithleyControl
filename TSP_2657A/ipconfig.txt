@@ -1,0 +1,91 @@
+Microsoft Windows [Version 10.0.19042.2965]
+(c) Microsoft Corporation. All rights reserved.
+
+P:\>ipconfig/all
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : NANOLAB-01
+   Primary Dns Suffix  . . . . . . . : canterbury.ac.nz
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+   DNS Suffix Search List. . . . . . : canterbury.ac.nz
+                                       eng.canterbury.ac.nz
+                                       elec.canterbury.ac.nz
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . : canterbury.ac.nz
+   Description . . . . . . . . . . . : Intel(R) Ethernet Connection (2) I219-LM
+   Physical Address. . . . . . . . . : 48-0F-CF-54-0D-88
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::a199:49a3:695a:1a29%3(Preferred)
+   IPv4 Address. . . . . . . . . . . : 132.181.53.106(Preferred)
+   Subnet Mask . . . . . . . . . . . : 255.255.254.0
+   Lease Obtained. . . . . . . . . . : Tuesday, 5 November 2024 4:59:37 pm
+   Lease Expires . . . . . . . . . . : Wednesday, 6 November 2024 4:59:36 pm
+   Default Gateway . . . . . . . . . : 132.181.53.254
+   DHCP Server . . . . . . . . . . . : 132.181.153.43
+   DHCPv6 IAID . . . . . . . . . . . : 289935311
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-25-5B-AB-09-48-0F-CF-54-0D-88
+   DNS Servers . . . . . . . . . . . : 132.181.2.225
+                                       132.181.39.50
+   NetBIOS over Tcpip. . . . . . . . : Disabled
+   Connection-specific DNS Suffix Search List :
+                                       canterbury.ac.nz
+                                       linux.canterbury.ac.nz
+
+P:\>ipconfig/all
+The current directory is invalid.
+
+P:\>ipconfig/all
+The current directory is invalid.
+
+P:\>c:
+
+C:\>ipconfig/all
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : NANOLAB-01
+   Primary Dns Suffix  . . . . . . . : canterbury.ac.nz
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+   DNS Suffix Search List. . . . . . : canterbury.ac.nz
+                                       eng.canterbury.ac.nz
+                                       elec.canterbury.ac.nz
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . : canterbury.ac.nz
+   Description . . . . . . . . . . . : Intel(R) Ethernet Connection (2) I219-LM
+   Physical Address. . . . . . . . . : 48-0F-CF-54-0D-88
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::a199:49a3:695a:1a29%3(Preferred)
+   Autoconfiguration IPv4 Address. . : 169.254.96.241(Preferred)
+   Subnet Mask . . . . . . . . . . . : 255.255.0.0
+   Default Gateway . . . . . . . . . :
+   DHCPv6 IAID . . . . . . . . . . . : 289935311
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-25-5B-AB-09-48-0F-CF-54-0D-88
+   DNS Servers . . . . . . . . . . . : fec0:0:0:ffff::1%1
+                                       fec0:0:0:ffff::2%1
+                                       fec0:0:0:ffff::3%1
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+   Connection-specific DNS Suffix Search List :
+                                       canterbury.ac.nz
+                                       linux.canterbury.ac.nz
+
+
+Control Panel > Network and Internet > Network and Sharing Center > Advanced sharing settings > Turn on network discovery
+Back to Network and Sharing Center
+Ethernet > Internet Protocol Version 4 (TCP/IPv4) > Properties > Use the following IP address > Change:
+IP address 192.168.1.100
+Subnet mask 255.255.255.0
+
+Note that IP address of the device is 192.168.1.101
+
+Gary solution: connect the device to another port in the LAN and use that automatically obtained address to connect to the device
