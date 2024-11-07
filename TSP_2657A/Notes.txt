@@ -37,7 +37,7 @@ function DiodeRL(vstart,vstop,vstep,irange,ilimit)
 
 	display.screen = display.SMUA
 	display.smua.measure.func = display.MEASURE_DCAMPS
-	display.smua.digits = display.DIGITS_5_5
+	display.smua.digits = display.DIGITS_4_5
 
 		
 	--Define local variable to store the number of points in the sweep
@@ -66,7 +66,8 @@ function DiodeRL(vstart,vstop,vstep,irange,ilimit)
 	
 	--Set the measurement integration time
 	smua.measure.nplc = 1
-	smua.measure.delay = 0.5
+	smua.measure.delay = 1
+	
 	--Configure the reading buffers
 	smua.nvbuffer1.clear()
 	smua.nvbuffer1.appendmode = 1
@@ -95,13 +96,8 @@ function DiodeRL(vstart,vstop,vstep,irange,ilimit)
 		end
 		
 		--Make simultaneous voltage and current measurements
-		smua.measure.i(smua.nvbuffer1)
-		smua.measure.v(smua.nvbuffer2)
-		--smua.measure.iv(smua.nvbuffer1)
-		-- smua.measure.i()
-		-- smua.measure.i(smua.nvbuffer1)
-		-- smua.measure.i(smua.nvbuffer1)
-	
+		--smua.measure.iv(smua.nvbuffer1, smua.nvbuffer2)
+		smua.measure.iv(smua.nvbuffer1)
 	end
 	
 	--Set the voltage level back to 0V
@@ -126,4 +122,16 @@ end
 
 ----
 DiodeRL(0, 4, 0.4, "auto", 0.1)
-printData()
+--printData()
+
+
+
+Note:
+This code shows the currents in the panel:
+--Make simultaneous voltage and current measurements
+		smua.measure.iv(smua.nvbuffer1, smua.nvbuffer2)
+		smua.measure.iv(smua.nvbuffer1)
+resulting in dublicate i and v
+correct one:
+		smua.measure.i(smua.nvbuffer1)
+		smua.measure.v(smua.nvbuffer2)
