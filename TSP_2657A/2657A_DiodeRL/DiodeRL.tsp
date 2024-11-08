@@ -64,6 +64,7 @@ function DiodeRL(vstart,vstop,vstep,irange,ilimit)
 		smua.measure.rangei = irange
 	end 
 	
+	
 	--Set the measurement integration time
 	smua.measure.nplc = 1
 	smua.measure.delay = 0.5
